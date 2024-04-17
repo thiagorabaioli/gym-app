@@ -25,8 +25,8 @@ int main() {
                 break;
             case 2:
 
-                ler_clientes_do_arquivo(str_path);
-                exibir_clientes();
+               ler_clientes_do_arquivo(str_path);
+               exibir_clientes();
                 break;
             case 3:
                 verificarArquivoExiste(str_path);

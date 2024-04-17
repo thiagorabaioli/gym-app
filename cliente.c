@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include "cliente.h"
-#include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
 
 
@@ -81,7 +79,7 @@ void ler_clientes_do_arquivo(const char* nome_arquivo) {
 
 void exibir_clientes() {
     printf("Clientes:\n");
-    for (int i = 0; i < num_clientes; i++) {
+    for (int i = 1; i < num_clientes; i++) {
         printf("ID: %d, Nome: %s, Idade: %d, Genero: %c, Plano de Treino: %s\n",
                clientes[i].id,clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano);
     }

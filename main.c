@@ -10,6 +10,8 @@
 
 
 int main() {
+
+    char *str_path="C:\\Users\\tfrab\\Downloads\\LP\\gym-app\\clientes.csv";
     int opcao;
 
     do {
@@ -18,16 +20,16 @@ int main() {
 
         switch (opcao) {
             case 1:
-                adicionar_cliente();
+                adicionar_cliente(str_path);
 
                 break;
             case 2:
 
-                ler_clientes_do_arquivo("C:\\Users\\tfrab\\Downloads\\LP\\gym-app\\clientes.csv");
+                ler_clientes_do_arquivo(str_path);
                 exibir_clientes();
                 break;
             case 3:
-                verificarArquivoExiste("C:\\Users\\tfrab\\Downloads\\LP\\gym-app\\clientes.csv");
+                verificarArquivoExiste(str_path);
                 break;
             case 4:
                 // Lógica para pesquisar cliente

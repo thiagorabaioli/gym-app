@@ -3,6 +3,7 @@
 #define CLIENTE_H
 
 typedef struct {
+    int id;
     char nome[100];
     int idade;
     char genero;

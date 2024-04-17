@@ -1,0 +1,9 @@
+# ninja log v5
+75	150	7349827057867020	efolioA.exe	2c96ae41f9e98392
+2	14	1713380610721108178	CMakeFiles/efolioA.dir/leitura_dados.c.o	8be06c7427e46596
+2	18	1713380610725108187	CMakeFiles/efolioA.dir/relatorios.c.o	c54d9b2f27b46df
+1	18	1713380610725108187	CMakeFiles/efolioA.dir/escrita_dados.c.o	a078864531ce2cfe
+1	20	1713380610725108187	CMakeFiles/efolioA.dir/controle_presenca.c.o	2cca2d4c4046b844
+2	33	1713380610741108223	CMakeFiles/efolioA.dir/menu_principal.c.o	3a844107b9dfac32
+2	37	1713380610745108231	CMakeFiles/efolioA.dir/main.c.o	f35adedb71496967
+37	57	1713380610761108267	efolioA	1facd933baac632c

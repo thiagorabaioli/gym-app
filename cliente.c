@@ -5,37 +5,34 @@
 
 #define MAX_CLIENTES 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes
-int proximo_id = 5; // Inicialize o próximo ID com 1
+int proximo_id = 5; // Inicialize o próximo ID com 5
 
 Cliente clientes[MAX_CLIENTES]; // Array para armazenar os clientes
-// Variável para rastrear o número atual de clientes
 
-void adicionar_cliente(const char* nome_arquivo) {
-    // Verifica se o limite máximo de clientes foi atingido
-    if (num_clientes >= MAX_CLIENTES) {
-        printf("Limite máximo de clientes atingido!\n");
+void adicionar_cliente(const char* nome_arquivo){
+
+    if(num_clientes >=100){
+        printf("Tamanho máximo clientes ultrapassado (max 100 clientes \n");
         return;
     }
 
     FILE *arquivo = fopen(nome_arquivo, "a");
-    if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo para escrita.\n");
+    if(arquivo==NULL){
+        printf("Erro ao abrir o ficheiro. \n");
         return;
     }
 
-    printf("Adicionar novo cliente:\n");
+    printf("Adicionar novo cliente: \n");
 
-    // Solicitar ao usuário que insira os detalhes do novo cliente
+    clientes[num_clientes].id = proximo_id++; // "Id do cliente incrementado"
     printf("Nome: ");
     scanf("%s", clientes[num_clientes].nome);
     printf("Idade: ");
     scanf("%d", &clientes[num_clientes].idade);
-    printf("Gênero (M/F): ");
+    printf("Genero (M/F): ");
     scanf(" %c", &clientes[num_clientes].genero);
     printf("Plano de treino: ");
     scanf("%s", clientes[num_clientes].plano);
-    // Atribuir o próximo ID ao novo cliente e incrementar o próximo ID para o próximo cliente
-    clientes[num_clientes].id = proximo_id++;
 
     // Escrever os dados do novo cliente no arquivo
     fprintf(arquivo, "%d,%s,%d,%c,%s\n", clientes[num_clientes].id, clientes[num_clientes].nome, clientes[num_clientes].idade,
@@ -57,30 +54,33 @@ int verificarArquivoExiste(const char *path) {
         return 0; // O arquivo não existe
     }
 }
+ void  ler_clientes_do_arquivo(const char* nome_arquivo){
 
-void ler_clientes_do_arquivo(const char* nome_arquivo) {
     FILE *arquivo = fopen(nome_arquivo, "r");
-    if (arquivo == NULL) {
-        perror("Erro ao abrir o arquivo");
-        return;
-    }
 
-    char linha[256]; // Buffer para armazenar cada linha do arquivo
-    while (fgets(linha, sizeof(linha), arquivo)) {
-        // Extrai os dados de cada linha usando sscanf()
-        sscanf(linha, "%d,%[^,],%d,%c,%[^,\n]", &clientes[num_clientes].id, clientes[num_clientes].nome, &clientes[num_clientes].idade,
-               &clientes[num_clientes].genero, clientes[num_clientes].plano);
-        num_clientes++; // Incrementa o número de clientes
-    }
+     if(arquivo==NULL){
+         perror("Erro ao abrir o arquivo");
+         return;
+     }
 
-    fclose(arquivo); // Fecha o arquivo após a leitura
+     char buffer[256];
+     while(fgets(buffer, sizeof (buffer), arquivo)){
+
+
+         sscanf(buffer, "%d,%[^,],%d,%c,%[^,\n]", &clientes[num_clientes].id, clientes[num_clientes].nome, &clientes[num_clientes].idade,
+                &clientes[num_clientes].genero, clientes[num_clientes].plano);
+         num_clientes++;
+     }
+     fclose(arquivo);
+
+   }
+
+   void exibir_clientes(){
+       printf("Clientes: \n");
+       for (int i=1; i<num_clientes; i++){
+           printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s \n",
+                  clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano);
+       }
 }
 
 
-void exibir_clientes() {
-    printf("Clientes:\n");
-    for (int i = 1; i < num_clientes; i++) {
-        printf("ID: %d, Nome: %s, Idade: %d, Genero: %c, Plano de Treino: %s\n",
-               clientes[i].id,clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano);
-    }
-}

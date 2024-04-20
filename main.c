@@ -24,8 +24,7 @@ int main() {
 
                 break;
             case 2:
-
-               ler_clientes_do_arquivo(str_path);
+                ler_clientes_do_arquivo(str_path);
                exibir_clientes();
                 break;
             case 3:

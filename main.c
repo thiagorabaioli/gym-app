@@ -28,7 +28,10 @@ int main() {
                exibir_clientes();
                 break;
             case 3:
-                verificarArquivoExiste(str_path);
+
+                remover_cliente_id( recebe_id_para_apagar());
+                escrever_clientes_no_arquivo(str_path);
+
                 break;
             case 4:
                 // Lógica para pesquisar cliente

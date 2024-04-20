@@ -9,6 +9,7 @@ typedef struct {
     char genero;
     char plano[100];
     int sessoes_frequentadas;
+    int ativo;
 } Cliente;
 
 #endif

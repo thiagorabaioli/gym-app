@@ -21,6 +21,7 @@ void adicionar_cliente(const char* nome_arquivo){
         printf("Erro ao abrir o ficheiro. \n");
         return;
     }
+    fflush(arquivo);
 
     printf("Adicionar novo cliente: \n");
 
@@ -34,11 +35,15 @@ void adicionar_cliente(const char* nome_arquivo){
     printf("Plano de treino: ");
     scanf("%s", clientes[num_clientes].plano);
 
+    clientes[num_clientes].ativo=1; //Cliente é sempre iniciado como ativo.
+
     // Escrever os dados do novo cliente no arquivo
-    fprintf(arquivo, "%d,%s,%d,%c,%s\n", clientes[num_clientes].id, clientes[num_clientes].nome, clientes[num_clientes].idade,
-            clientes[num_clientes].genero, clientes[num_clientes].plano);
+    fprintf(arquivo, "%d,%s,%d,%c,%s,%d\n", clientes[num_clientes].id, clientes[num_clientes].nome, clientes[num_clientes].idade,
+            clientes[num_clientes].genero, clientes[num_clientes].plano, clientes[num_clientes].ativo);
+
     // Incrementar o número de clientes após adicionar um novo cliente
     num_clientes++;
+
 
     printf("Novo cliente adicionado com sucesso!\n");
 
@@ -55,7 +60,7 @@ int verificarArquivoExiste(const char *path) {
     }
 }
  void  ler_clientes_do_arquivo(const char* nome_arquivo){
-
+  num_clientes=0;
     FILE *arquivo = fopen(nome_arquivo, "r");
 
      if(arquivo==NULL){
@@ -71,7 +76,11 @@ int verificarArquivoExiste(const char *path) {
                 &clientes[num_clientes].genero, clientes[num_clientes].plano, &clientes[num_clientes].ativo);
          num_clientes++;
      }
+
+     fflush(arquivo);
+
      fclose(arquivo);
+
 
    }
 

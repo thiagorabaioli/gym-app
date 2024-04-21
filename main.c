@@ -20,17 +20,17 @@ int main() {
 
         switch (opcao) {
             case 1:
-              //  adicionar_cliente(str_path);
+               adicionar_cliente(str_path);
 
                 break;
             case 2:
-              //  ler_clientes_do_arquivo(str_path);
-             //  exibir_clientes();
+                ler_clientes_do_arquivo(str_path);
+               exibir_clientes();
                 break;
             case 3:
 
-             //   remover_cliente_id( recebe_id_para_apagar());
-             //   escrever_clientes_no_arquivo(str_path);
+                remover_cliente_id( recebe_id_para_apagar());
+                escrever_clientes_no_arquivo(str_path);
 
                 break;
             case 4:

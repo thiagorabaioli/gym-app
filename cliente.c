@@ -95,41 +95,38 @@ int verificarArquivoExiste(const char *path) {
 int recebe_id_para_apagar(){
     exibir_clientes();
     int id_cliente=0;
-    printf("Digite o id para remover: \n");
+    printf("Digite o ID para apagar: \n");
     scanf("%d", &id_cliente);
     return id_cliente;
 }
 
-void remover_cliente_id(int id) {
-    int encontrado = 0;
-    for (int i = 0; i < num_clientes; i++) {
-        if (clientes[i].id == id) {
-            encontrado = 1;
-            clientes[i].ativo = 0;
+void remover_cliente_id(int id){
+    int encontrou=0;
+    for(int i=0; i<num_clientes; i++){
+        if(clientes[i].id == id){
+            clientes[i].ativo=0;
+            encontrou=1;
             break;
         }
     }
-    if (!encontrado) {
-        printf("Cliente com o ID: %d nao encontrado ", id);
-    }
-
+    if(!encontrou) printf("Cliente com o ID: %d, não econtrado: \n", id);
 }
-    void escrever_clientes_no_arquivo(const char* nome_arquivo) {
-        FILE *arquivo = fopen(nome_arquivo, "w");
-        if (arquivo == NULL) {
-            perror("Erro ao abrir o arquivo para escrita");
-            return;
-        }
 
-        for (int i = 0; i < num_clientes; i++) {
-            if (clientes[i].ativo == 1) {
-                fprintf(arquivo, "%d,%s,%d,%c,%s, %d\n", clientes[i].id, clientes[i].nome, clientes[i].idade,
-                        clientes[i].genero, clientes[i].plano, clientes[i].ativo=1);
-            }
-        }
-
-        fclose(arquivo); // Fecha o arquivo após a escrita
+void escrever_clientes_no_arquivo(const char* nome_arquivo){
+    if(nome_arquivo==NULL){
+        perror("arquivo nao encontrado \n");
+        return;
     }
+    FILE *arquivo = fopen(nome_arquivo, "w");
+
+    for(int i=0; i<num_clientes; i++){
+            if(clientes[i].ativo==1){
+                fprintf(arquivo, "%d,%s,%d,%c,%s,%d\n",
+                        clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano, clientes[i].ativo=1);
+            }
+    }
+    fclose(arquivo); //Fecha o arquivo.
+}
 
 
 

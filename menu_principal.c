@@ -8,8 +8,9 @@ void exibir_menu_principal() {
     printf("2.Mostrar clientes do ficheiro\n");
     printf("3. Remover cliente\n");
     printf("4. Editar cliente\n");
-    printf("5. Registrar presença e calcular pagamento\n");
-    printf("6. Gerar relatorios\n");
+    printf("5. Pesquisar cliente por ID: \n");
+    printf("6. Registrar presença e calcular pagamento\n");
+    printf("7. Gerar relatorios\n");
     printf("0. Sair do programa\n");
     printf("Opcao: ");
 }

@@ -34,13 +34,15 @@ int main() {
 
                 break;
             case 4:
-                ler_clientes_do_arquivo(str_path);
-                alterar_cliente_id();
+
                 break;
             case 5:
-                // Lógica para registrar presença e calcular pagamento
-                break;
+                ler_clientes_do_arquivo(str_path);
+                pesquisa_cliente_id();
             case 6:
+                // Lógica para gerar relatórios
+                break;
+            case 7:
                 // Lógica para gerar relatórios
                 break;
             case 0:

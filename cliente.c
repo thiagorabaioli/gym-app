@@ -9,6 +9,8 @@ int proximo_id = 5; // Inicialize o próximo ID com 5
 
 Cliente clientes[MAX_CLIENTES]; // Array para armazenar os clientes
 
+void escrever_clientes_no_arquivo22(FILE *pIobuf);
+
 void adicionar_cliente(const char* nome_arquivo){
 
     if(num_clientes >=100){
@@ -118,7 +120,6 @@ void escrever_clientes_no_arquivo(const char* nome_arquivo){
         return;
     }
     FILE *arquivo = fopen(nome_arquivo, "w");
-
     for(int i=0; i<num_clientes; i++){
             if(clientes[i].ativo==1){
                 fprintf(arquivo, "%d,%s,%d,%c,%s,%d\n",
@@ -128,14 +129,19 @@ void escrever_clientes_no_arquivo(const char* nome_arquivo){
     fclose(arquivo); //Fecha o arquivo.
 }
 
-void alterar_cliente_id(){
-     int id_cliente = recebe_id_cliente();
+void pesquisa_cliente_id(){
+    int id_cliente = recebe_id_cliente();
     printf("Clientes: \n");
     printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d \n",
-               clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano, clientes[id_cliente].ativo);
+           clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano, clientes[id_cliente].ativo);
 
 
 }
+
+
+
+
+
 
 
 

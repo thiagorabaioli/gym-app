@@ -29,12 +29,13 @@ int main() {
                 break;
             case 3:
                 ler_clientes_do_arquivo(str_path);
-                remover_cliente_id( recebe_id_para_apagar());
+                remover_cliente_id( recebe_id_cliente());
                 escrever_clientes_no_arquivo(str_path);
 
                 break;
             case 4:
-                // Lógica para pesquisar cliente
+                ler_clientes_do_arquivo(str_path);
+                alterar_cliente_id();
                 break;
             case 5:
                 // Lógica para registrar presença e calcular pagamento

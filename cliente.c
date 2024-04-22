@@ -92,10 +92,10 @@ int verificarArquivoExiste(const char *path) {
        }
 }
 
-int recebe_id_para_apagar(){
+int recebe_id_cliente(){
     exibir_clientes();
     int id_cliente=0;
-    printf("Digite o ID para apagar: \n");
+    printf("Digite o ID do cliente: \n");
     scanf("%d", &id_cliente);
     return id_cliente;
 }
@@ -126,6 +126,15 @@ void escrever_clientes_no_arquivo(const char* nome_arquivo){
             }
     }
     fclose(arquivo); //Fecha o arquivo.
+}
+
+void alterar_cliente_id(){
+     int id_cliente = recebe_id_cliente();
+    printf("Clientes: \n");
+    printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d \n",
+               clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano, clientes[id_cliente].ativo);
+
+
 }
 
 

@@ -49,6 +49,7 @@ CMakeFiles/efolioA.dir/main.c.obj: C:/Users/tfrab/Downloads/LP/gym-app/main.c \
   C:/Users/tfrab/Downloads/LP/gym-app/cliente.h \
   C:/Users/tfrab/Downloads/LP/gym-app/controle_presenca.h \
   C:/Users/tfrab/Downloads/LP/gym-app/escrita_dados.h \
+  C:/Users/tfrab/Downloads/LP/gym-app/leitura_dados.c \
   C:/Users/tfrab/Downloads/LP/gym-app/leitura_dados.h \
   C:/Users/tfrab/Downloads/LP/gym-app/menu_principal.h \
   C:/Users/tfrab/Downloads/LP/gym-app/relatorios.h

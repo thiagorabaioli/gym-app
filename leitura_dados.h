@@ -4,6 +4,6 @@
 
 #include "cliente.h"
 
-Cliente* ler_clientes(const char* arquivo);
+void ler_clientes(const char* arquivo);
 
 #endif

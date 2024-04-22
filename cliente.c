@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "cliente.h"
 #include <unistd.h>
-
+#include "leitura_dados.c"
 
 #define MAX_CLIENTES 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes
@@ -86,7 +86,7 @@ int verificarArquivoExiste(const char *path) {
 
    void exibir_clientes(){
        printf("Clientes: \n");
-       for (int i=1; i<num_clientes; i++){
+       for (int i=0; i<num_clientes; i++){
            printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d \n",
                   clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano, clientes[i].ativo);
        }
@@ -102,7 +102,6 @@ int recebe_id_para_apagar(){
 
 void remover_cliente_id(int id) {
     int encontrado = 0;
-
     for (int i = 0; i < num_clientes; i++) {
         if (clientes[i].id == id) {
             encontrado = 1;
@@ -113,6 +112,7 @@ void remover_cliente_id(int id) {
     if (!encontrado) {
         printf("Cliente com o ID: %d nao encontrado ", id);
     }
+
 }
     void escrever_clientes_no_arquivo(const char* nome_arquivo) {
         FILE *arquivo = fopen(nome_arquivo, "w");
@@ -122,7 +122,7 @@ void remover_cliente_id(int id) {
         }
 
         for (int i = 0; i < num_clientes; i++) {
-            if (clientes[i].ativo) {
+            if (clientes[i].ativo == 1) {
                 fprintf(arquivo, "%d,%s,%d,%c,%s, %d\n", clientes[i].id, clientes[i].nome, clientes[i].idade,
                         clientes[i].genero, clientes[i].plano, clientes[i].ativo=1);
             }

@@ -43,8 +43,13 @@ int main() {
                 // Lógica para gerar relatórios
                 break;
             case 7:
-                // Lógica para gerar relatórios
+              //  registar_presenca_id();
+              printf("Registar presenca\n");
                 break;
+            case 8:
+               //calcular_pagamento_id();
+               printf("Calcular pagamento \n");
+               break;
             case 0:
                 printf("Saindo do programa...\n");
                 break;

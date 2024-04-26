@@ -46,12 +46,16 @@ int main() {
                 exibir_frequencias();
                 break;
             case 7:
+               adicionar_frequencia_por_id(str_frequencias);
+                break;
+            case 8:
                 //calcular_pagamento_id();
                 printf("Calcular pagamento \n");
                 break;
-            case 8:
+            case 9:
                 printf("Gerar relatorio \n");
                break;
+
             case 0:
                 printf("Saindo do programa...\n");
                 break;

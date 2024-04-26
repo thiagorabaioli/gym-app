@@ -7,11 +7,13 @@
 #include "relatorios.h"
 #include "menu_principal.h"
 #include "cliente.c"
+#include "controle_presenca.c"
 
 
 int main() {
 
     char *str_path="C:\\Users\\tfrab\\Downloads\\LP\\gym-app\\clientes.csv";
+    char *str_frequencias="C:\\Users\\tfrab\\Downloads\\LP\\gym-app\\frequencias.csv";
     int opcao;
 
     do {
@@ -31,7 +33,6 @@ int main() {
                 ler_clientes_do_arquivo(str_path);
                 remover_cliente_id( recebe_id_cliente());
                 escrever_clientes_no_arquivo(str_path);
-
                 break;
             case 4:
 
@@ -41,9 +42,8 @@ int main() {
                 pesquisa_cliente_id();
                 break;
             case 6:
-
-              //
-              // registar_presenca_por_id();
+                ler_presensas_do_arquivo(str_frequencias);
+                exibir_frequencias();
                 break;
             case 7:
                 //calcular_pagamento_id();

@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include "cliente.h"
 #include <unistd.h>
-#include "leitura_dados.c"
+#include "controle_presenca.h"
 
-#define MAX_CLIENTES 100 // Define o número máximo de clientes que o programa pode armazenar
+#define MAX_SIZE 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes
 int proximo_id = 5; // Inicialize o próximo ID com 5
+int num_frequencias;
 
-Cliente clientes[MAX_CLIENTES]; // Array para armazenar os clientes
-
-void escrever_clientes_no_arquivo22(FILE *pIobuf);
+Cliente clientes[MAX_SIZE]; // Array para armazenar os clientes
+Contelo_Presenca presenca [MAX_SIZE];
 
 void adicionar_cliente(const char* nome_arquivo){
 
@@ -137,22 +137,38 @@ void pesquisa_cliente_id(){
            clientes[id_cliente].ativo);
 }
 
+void  ler_presensas_do_arquivo(const char* nome_arquivo2){
+    num_frequencias=0;
+    FILE *arquivo2 = fopen(nome_arquivo2, "r");
 
-
-void escrever_clientes_no_arquivo2(const char* nome_arquivo){
-    if(nome_arquivo==NULL){
-        perror("arquivo nao encontrado \n");
+    if(arquivo2==NULL){
+        perror("Erro ao abrir o arquivo");
         return;
     }
-    FILE *arquivo = fopen(nome_arquivo, "w");
-    for(int i=0; i<num_clientes; i++){
-        if(clientes[i].ativo==1){
-            fprintf(arquivo, "%d,%s,%d,%c,%s,%d\n",
-                    clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano, clientes[i].ativo=1);
-        }
+
+    char buffer[256];
+    while(fgets(buffer, sizeof (buffer), arquivo2)){
+
+        sscanf(buffer, "%d,%d", &presenca[num_frequencias].idPresenca, &presenca[num_frequencias].numSessoes);
+        num_frequencias++;
     }
-    fclose(arquivo); //Fecha o arquivo.
+
+    fclose(arquivo2);
+
 }
+
+void exibir_frequencias(){
+
+    printf("Frequencias: \n");
+    for (int i=0; i<num_frequencias; i++){
+        printf("ID Frequencia: %d, Numero sessoes: %d\n",
+               presenca[i].idPresenca, presenca[i].numSessoes);
+    }
+    getchar();
+}
+
+
+
 
 
 

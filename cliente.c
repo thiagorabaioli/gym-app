@@ -89,7 +89,7 @@ int verificarArquivoExiste(const char *path) {
    void exibir_clientes(){
        printf("Clientes: \n");
        for (int i=0; i<num_clientes; i++){
-           printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d \n",
+           printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d\n",
                   clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano, clientes[i].ativo);
        }
 }
@@ -131,12 +131,30 @@ void escrever_clientes_no_arquivo(const char* nome_arquivo){
 
 void pesquisa_cliente_id(){
     int id_cliente = recebe_id_cliente();
-    printf("Clientes: \n");
-    printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d \n",
-           clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano, clientes[id_cliente].ativo);
-
-
+    printf("id clientes %d\n", id_cliente);
+    printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d\n",
+           clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano,
+           clientes[id_cliente].ativo);
 }
+
+
+
+void escrever_clientes_no_arquivo2(const char* nome_arquivo){
+    if(nome_arquivo==NULL){
+        perror("arquivo nao encontrado \n");
+        return;
+    }
+    FILE *arquivo = fopen(nome_arquivo, "w");
+    for(int i=0; i<num_clientes; i++){
+        if(clientes[i].ativo==1){
+            fprintf(arquivo, "%d,%s,%d,%c,%s,%d\n",
+                    clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano, clientes[i].ativo=1);
+        }
+    }
+    fclose(arquivo); //Fecha o arquivo.
+}
+
+
 
 
 

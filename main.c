@@ -39,16 +39,18 @@ int main() {
             case 5:
                 ler_clientes_do_arquivo(str_path);
                 pesquisa_cliente_id();
+                break;
             case 6:
-                // Lógica para gerar relatórios
+
+              //
+              // registar_presenca_por_id();
                 break;
             case 7:
-              //  registar_presenca_id();
-              printf("Registar presenca\n");
+                //calcular_pagamento_id();
+                printf("Calcular pagamento \n");
                 break;
             case 8:
-               //calcular_pagamento_id();
-               printf("Calcular pagamento \n");
+                printf("Gerar relatorio \n");
                break;
             case 0:
                 printf("Saindo do programa...\n");

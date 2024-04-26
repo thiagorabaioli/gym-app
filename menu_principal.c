@@ -9,7 +9,7 @@ void exibir_menu_principal() {
     printf("3. Remover cliente\n");
     printf("4. Editar cliente\n");
     printf("5. Pesquisar cliente por ID: \n");
-    printf("6. Registrar presenças\n");
+    printf("6. Registrar presencas\n");
     printf("7. Calcular pagamento\n");
     printf("8. Gerar relatorios\n");
     printf("0. Sair do programa\n");

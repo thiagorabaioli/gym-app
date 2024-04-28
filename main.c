@@ -1,9 +1,7 @@
 // main.c
 #include <stdio.h>
-#include "cliente.h"
 #include "leitura_dados.h"
 #include "escrita_dados.h"
-#include "relatorios.h"
 #include "menu_principal.h"
 #include "cliente.c"
 
@@ -26,11 +24,11 @@ int main() {
 
                 break;
             case 2:
-                ler_clientes_do_arquivo(str_path);
-               exibir_clientes();
+                ld_ler_clientes_do_arquivo();
+                ld_exibir_clientes();
                 break;
             case 3:
-                ler_clientes_do_arquivo(str_path);
+                ld_ler_clientes_do_arquivo();
                 ed_remover_clientes();
                 ed_escrever_clientes_no_arquivo();
                 break;
@@ -38,8 +36,8 @@ int main() {
 
                 break;
             case 5:
-                ler_clientes_do_arquivo(str_path);
-                pesquisa_cliente_id();
+                ld_ler_clientes_do_arquivo();
+                ld_pesquisa_cliente_id();
                 break;
             case 6:
                // ler_presensas_do_arquivo(str_frequencias);

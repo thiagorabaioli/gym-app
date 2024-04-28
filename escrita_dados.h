@@ -8,6 +8,5 @@ void ed_remover_clientes();
 
 void ed_escrever_clientes_no_arquivo();
 
-void printfparatestar();
 
 #endif

@@ -1,6 +1,7 @@
 // escrita_dados.c
 #include "escrita_dados.h"
 #include "cliente.h"
+
 char *str_path="C:\\Users\\tfrab\\Downloads\\LP21178\\gym-app\\clientes.csv";
 
 void ed_escrever_clientes() {

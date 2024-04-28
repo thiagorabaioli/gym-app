@@ -11,12 +11,11 @@ CMakeFiles/efolioA.dir/main.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:\Users\tfrab\Downloads\LP21178\gym-app\cliente.h \
  C:\Users\tfrab\Downloads\LP21178\gym-app\leitura_dados.h \
  C:\Users\tfrab\Downloads\LP21178\gym-app\escrita_dados.h \
- C:\Users\tfrab\Downloads\LP21178\gym-app\relatorios.h \
  C:\Users\tfrab\Downloads\LP21178\gym-app\menu_principal.h \
  C:\Users\tfrab\Downloads\LP21178\gym-app\cliente.c \
+ C:\Users\tfrab\Downloads\LP21178\gym-app\cliente.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/io.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \

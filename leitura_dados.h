@@ -2,8 +2,11 @@
 #ifndef LEITURA_DADOS_H
 #define LEITURA_DADOS_H
 
-#include "cliente.h"
 
-void ler_clientes(const char* arquivo);
+void  ld_ler_clientes_do_arquivo();
+
+void ld_exibir_clientes();
+
+void ld_pesquisa_cliente_id();
 
 #endif

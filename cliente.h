@@ -11,4 +11,12 @@ typedef struct {
     int ativo;
 } Cliente;
 
+void adicionar_cliente(const char* nome_arquivo);
+
+void remover_cliente_id(int id);
+
+int recebe_id_cliente();
+
+void escrever_clientes_no_arquivo(const char* nome_arquivo);
+
 #endif

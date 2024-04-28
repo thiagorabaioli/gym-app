@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tfrab\Downloads\LP\gym-app
+CMAKE_SOURCE_DIR = C:\Users\tfrab\Downloads\LP21178\gym-app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tfrab\Downloads\LP\gym-app\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tfrab\Downloads\LP21178\gym-app\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tfrab\Downloads\LP\gym-app\cmake-build-debug\CMakeFiles C:\Users\tfrab\Downloads\LP\gym-app\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tfrab\Downloads\LP21178\gym-app\cmake-build-debug\CMakeFiles C:\Users\tfrab\Downloads\LP21178\gym-app\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tfrab\Downloads\LP\gym-app\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tfrab\Downloads\LP21178\gym-app\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,30 +127,6 @@ efolioA: cmake_check_build_system
 efolioA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/build
 .PHONY : efolioA/fast
-
-controle_presenca.obj: controle_presenca.c.obj
-.PHONY : controle_presenca.obj
-
-# target to build an object file
-controle_presenca.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/controle_presenca.c.obj
-.PHONY : controle_presenca.c.obj
-
-controle_presenca.i: controle_presenca.c.i
-.PHONY : controle_presenca.i
-
-# target to preprocess a source file
-controle_presenca.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/controle_presenca.c.i
-.PHONY : controle_presenca.c.i
-
-controle_presenca.s: controle_presenca.c.s
-.PHONY : controle_presenca.s
-
-# target to generate assembly for a file
-controle_presenca.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/controle_presenca.c.s
-.PHONY : controle_presenca.c.s
 
 escrita_dados.obj: escrita_dados.c.obj
 .PHONY : escrita_dados.obj
@@ -281,9 +257,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... efolioA
-	@echo ... controle_presenca.obj
-	@echo ... controle_presenca.i
-	@echo ... controle_presenca.s
 	@echo ... escrita_dados.obj
 	@echo ... escrita_dados.i
 	@echo ... escrita_dados.s

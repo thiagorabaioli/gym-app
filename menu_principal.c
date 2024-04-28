@@ -24,3 +24,4 @@ int obter_opcao_principal() {
     while(getchar() != '\n'); // Limpa o buffer de entrada
     return opcao;
 }
+

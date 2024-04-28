@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "cliente.h"
 #include <unistd.h>
-#include "controle_presenca.h"
 
 #define MAX_SIZE 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes
@@ -9,7 +8,7 @@ int proximo_id = 5; // Inicialize o próximo ID com 5
 int num_frequencias=0;
 
 Cliente clientes[MAX_SIZE]; // Array para armazenar os clientes
-Contelo_Presenca presencas [MAX_SIZE];
+
 
 void adicionar_cliente(const char* nome_arquivo){
 
@@ -136,50 +135,7 @@ void pesquisa_cliente_id(){
            clientes[id_cliente].ativo);
 }
 
-void  ler_presensas_do_arquivo(const char* nome_arquivo2){
-    num_frequencias=0;
-    FILE *arquivo2 = fopen(nome_arquivo2, "r");
 
-    if(arquivo2==NULL){
-        perror("Erro ao abrir o arquivo");
-        return;
-    }
-
-    char buffer[256];
-    while(fgets(buffer, sizeof (buffer), arquivo2)){
-
-        sscanf(buffer, "%d,%d", &presencas[num_frequencias].idPresenca, &presencas[num_frequencias].numSessoes);
-        num_frequencias++;
-    }
-
-    fclose(arquivo2);
-
-}
-
-void exibir_frequencias(){
-
-    printf("Frequencias: \n");
-    for (int i=0; i<num_frequencias; i++){
-        printf("ID Cliente: %d, Numero sessoes: %d\n",
-               presencas[i].idPresenca, presencas[i].numSessoes);
-    }
-    getchar();
-}
-
-void adicionar_frequencia_por_id(const char* nome_arquivo2){
-    int id_cliente = recebe_id_cliente();
-    FILE *arquivo = fopen(nome_arquivo2, "a");
-    if(arquivo==NULL){
-        perror("Erro ao abrir o arquivo\n");
-        return;
-    }
-    printf("Digite o numeor de sessoes \n");
-    scanf("%d", &presencas[id_cliente].numSessoes);
-    fprintf(arquivo, "%d,%d\n", presencas[id_cliente].idPresenca, presencas[id_cliente].numSessoes);
-    printf("Presenca adicionada com sucesso!\n");
-    fclose(arquivo);
-
-}
 
 
 

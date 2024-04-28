@@ -2,8 +2,12 @@
 #ifndef ESCRITA_DADOS_H
 #define ESCRITA_DADOS_H
 
-#include "cliente.h"
+void ed_escrever_clientes();
 
-void escrever_clientes(const char* arquivo, Cliente* clientes, int num_clientes);
+void ed_remover_clientes();
+
+void ed_escrever_clientes_no_arquivo();
+
+void printfparatestar();
 
 #endif

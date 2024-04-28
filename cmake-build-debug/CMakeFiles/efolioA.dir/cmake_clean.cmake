@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/efolioA.dir/controle_presenca.c.obj"
-  "CMakeFiles/efolioA.dir/controle_presenca.c.obj.d"
   "CMakeFiles/efolioA.dir/escrita_dados.c.obj"
   "CMakeFiles/efolioA.dir/escrita_dados.c.obj.d"
   "CMakeFiles/efolioA.dir/leitura_dados.c.obj"

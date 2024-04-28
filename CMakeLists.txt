@@ -7,8 +7,6 @@ include_directories(.)
 
 add_executable(efolioA
         cliente.h
-        controle_presenca.c
-        controle_presenca.h
         escrita_dados.c
         escrita_dados.h
         leitura_dados.c

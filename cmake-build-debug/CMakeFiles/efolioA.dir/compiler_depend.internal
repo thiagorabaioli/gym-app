@@ -5,6 +5,7 @@ CMakeFiles/efolioA.dir/escrita_dados.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/escrita_dados.c
  C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h
  C:/Users/tfrab/Downloads/LP21178/gym-app/escrita_dados.h
+ C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h
 
 CMakeFiles/efolioA.dir/leitura_dados.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.c
@@ -80,6 +81,7 @@ CMakeFiles/efolioA.dir/presenca.c.obj
  C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdio.h
  C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl
  C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h
+ C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.h
  C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h
 
 CMakeFiles/efolioA.dir/relatorios.c.obj

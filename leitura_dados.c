@@ -11,7 +11,7 @@ void ld_ler_clientes_do_arquivo(){ler_clientes_do_arquivo(str_path_leitura);}
 
 void ld_exibir_clientes(){exibir_clientes();}
 
-void ld_pesquisa_cliente_id() {pesquisa_cliente_id();}
+int ld_pesquisa_cliente_id() {pesquisa_cliente_id();}
 
 void ld_ler_clientes_presenca() {p_ler_clientes_presenca(str_path_presenca);}
 

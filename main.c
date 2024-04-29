@@ -44,15 +44,14 @@ int main() {
                 ld_exibir_presencas();
                 break;
             case 7:
-               //adicionar_frequencia_por_id(str_frequencias);
+                p_inserir_frequencia_id(str_frequencias);
                 break;
             case 8:
-                //calcular_pagamento_id();
                 printf("Calcular pagamento \n");
+                ed_pagamento_id();
                 break;
             case 9:
                 printf("Gerar relatorio \n");
-                printTestePresenca();
                break;
 
             case 0:

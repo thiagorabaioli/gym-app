@@ -5,15 +5,36 @@
 
 #define MAX_SIZE 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes
-int proximo_id = 5; // Inicialize o próximo ID com 5
-int num_frequencias=0;
-
 Cliente clientes[MAX_SIZE]; // Array para armazenar os clientes
+
+
+int contarEntradas(const char *nome_arquivo) {
+    FILE *arquivo;
+    int contador = 0;
+    char buffer[1000]; // Tamanho máximo de uma linha no arquivo
+
+    arquivo = fopen(nome_arquivo, "r");
+
+    // Verifica se o arquivo foi aberto com sucesso
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return -1; // Retorna -1 em caso de erro
+    }
+
+    // Lê cada linha do arquivo
+    while (fgets(buffer, sizeof(buffer), arquivo) != NULL) {
+        contador++;
+    }
+
+    fclose(arquivo);
+
+    return contador;
+}
+
 
 
 
 void adicionar_cliente(const char* nome_arquivo){
-
     if(num_clientes >=100){
         printf("Tamanho máximo clientes ultrapassado (max 100 clientes \n");
         return;
@@ -24,10 +45,10 @@ void adicionar_cliente(const char* nome_arquivo){
         printf("Erro ao abrir o ficheiro. \n");
         return;
     }
-    fflush(arquivo);
 
+    fflush(arquivo);
+    clientes[num_clientes].id = contarEntradas(nome_arquivo);
     printf("Adicionar novo cliente: \n");
-    clientes[num_clientes].id = proximo_id++; // "Id do cliente incrementado"
     printf("Nome: ");
     scanf("%s", clientes[num_clientes].nome);
     printf("Idade: ");
@@ -36,8 +57,8 @@ void adicionar_cliente(const char* nome_arquivo){
     scanf(" %c", &clientes[num_clientes].genero);
     printf("Plano de treino: ");
     scanf("%s", clientes[num_clientes].plano);
-
     clientes[num_clientes].ativo=1; //Cliente é sempre iniciado como ativo.
+
 
     // Escrever os dados do novo cliente no arquivo
     fprintf(arquivo, "%d,%s,%d,%c,%s,%d\n", clientes[num_clientes].id, clientes[num_clientes].nome, clientes[num_clientes].idade,
@@ -45,7 +66,6 @@ void adicionar_cliente(const char* nome_arquivo){
 
     // Incrementar o número de clientes após adicionar um novo cliente
     num_clientes++;
-
 
     printf("Novo cliente adicionado com sucesso!\n");
 

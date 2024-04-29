@@ -13,4 +13,6 @@ void ld_ler_clientes_presenca();
 
 void ld_exibir_presencas();
 
+void printfTeste();
+
 #endif

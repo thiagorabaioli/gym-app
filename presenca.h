@@ -10,7 +10,11 @@ typedef struct {
 
 float pagamento(int num_sessoes);
 
-void ler_presenca_do_arquivo();
+void p_ler_clientes_presenca();
+
+void p_exibir_presencas();
+
+void printTestePresenca();
 
 #endif
 

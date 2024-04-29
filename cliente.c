@@ -9,7 +9,7 @@ int proximo_id = 5; // Inicialize o próximo ID com 5
 int num_frequencias=0;
 
 Cliente clientes[MAX_SIZE]; // Array para armazenar os clientes
-Presenca presenca[MAX_SIZE];
+
 
 
 void adicionar_cliente(const char* nome_arquivo){
@@ -136,44 +136,6 @@ void pesquisa_cliente_id(){
            clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano,
            clientes[id_cliente].ativo);
 }
-
-void  ler_clientes_presenca(const char* nome_arquivo){
-    num_frequencias=0;
-    FILE *arquivo2 = fopen(nome_arquivo, "r");
-
-    if(arquivo2==NULL){
-        perror("Erro ao abrir o arquivo");
-        return;
-    }
-
-    char buffer[256];
-    while(fgets(buffer, sizeof (buffer), arquivo2)){
-
-
-        sscanf(buffer, "%d,%d,%d", &presenca[num_frequencias].id_cliente, &presenca[num_frequencias].num_sessoes,
-               &presenca[num_frequencias].id_plano_treino);
-        num_frequencias++;
-    }
-
-    fflush(arquivo2);
-
-    fclose(arquivo2);
-
-
-}
-
-void exibir_presencas(){
-
-    printf("Frequencias: \n");
-    for (int i=1; i<num_frequencias; i++){
-        printf("ID Cliente Frequencia: %d, Numero sessoes: %d, ID plano de treino: %d\n",
-               presenca[i].id_cliente, presenca[i].num_sessoes, presenca[i].id_plano_treino);
-    }
-    getchar();
-}
-
-
-
 
 
 

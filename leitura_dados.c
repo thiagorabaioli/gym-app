@@ -1,7 +1,5 @@
-// leitura_dados.h
-#ifndef LEITURA_DADOS_H
-#define LEITURA_DADOS_H
 
+#include <stdio.h>
 #include "cliente.h"
 #include "presenca.h"
 
@@ -15,10 +13,12 @@ void ld_exibir_clientes(){exibir_clientes();}
 
 void ld_pesquisa_cliente_id() {pesquisa_cliente_id();}
 
-void ld_ler_clientes_presenca() {ler_clientes_presenca(str_path_presenca);}
+void ld_ler_clientes_presenca() {p_ler_clientes_presenca(str_path_presenca);}
 
-void ld_exibir_presencas(){exibir_presencas();}
+void ld_exibir_presencas(){p_exibir_presencas();}
+
+void printfTeste(){
+    printf("sss");
+}
 
 
-
-#endif

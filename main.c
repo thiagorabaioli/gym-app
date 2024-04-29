@@ -4,6 +4,7 @@
 #include "escrita_dados.h"
 #include "menu_principal.h"
 #include "cliente.c"
+#include "presenca.h"
 
 
 int main() {
@@ -51,6 +52,7 @@ int main() {
                 break;
             case 9:
                 printf("Gerar relatorio \n");
+                printTestePresenca();
                break;
 
             case 0:

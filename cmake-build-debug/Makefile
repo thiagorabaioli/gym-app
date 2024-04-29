@@ -224,6 +224,30 @@ menu_principal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/menu_principal.c.s
 .PHONY : menu_principal.c.s
 
+presenca.obj: presenca.c.obj
+.PHONY : presenca.obj
+
+# target to build an object file
+presenca.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/presenca.c.obj
+.PHONY : presenca.c.obj
+
+presenca.i: presenca.c.i
+.PHONY : presenca.i
+
+# target to preprocess a source file
+presenca.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/presenca.c.i
+.PHONY : presenca.c.i
+
+presenca.s: presenca.c.s
+.PHONY : presenca.s
+
+# target to generate assembly for a file
+presenca.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/presenca.c.s
+.PHONY : presenca.c.s
+
 relatorios.obj: relatorios.c.obj
 .PHONY : relatorios.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... menu_principal.obj
 	@echo ... menu_principal.i
 	@echo ... menu_principal.s
+	@echo ... presenca.obj
+	@echo ... presenca.i
+	@echo ... presenca.s
 	@echo ... relatorios.obj
 	@echo ... relatorios.i
 	@echo ... relatorios.s

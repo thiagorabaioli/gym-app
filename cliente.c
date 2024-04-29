@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "cliente.h"
 #include <unistd.h>
+#include "presenca.h"
 
 #define MAX_SIZE 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes
@@ -8,6 +9,7 @@ int proximo_id = 5; // Inicialize o próximo ID com 5
 int num_frequencias=0;
 
 Cliente clientes[MAX_SIZE]; // Array para armazenar os clientes
+Presenca presenca[MAX_SIZE];
 
 
 void adicionar_cliente(const char* nome_arquivo){
@@ -86,7 +88,7 @@ int verificarArquivoExiste(const char *path) {
 
    void exibir_clientes(){
        printf("Clientes: \n");
-       for (int i=0; i<num_clientes; i++){
+       for (int i=1; i<num_clientes; i++){
            printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d\n",
                   clientes[i].id, clientes[i].nome, clientes[i].idade, clientes[i].genero, clientes[i].plano, clientes[i].ativo);
        }
@@ -133,6 +135,41 @@ void pesquisa_cliente_id(){
     printf("ID: %d, Nome: %s, Idade: %d, Genero %c, plano de treino: %s, Ativo: %d\n",
            clientes[id_cliente].id, clientes[id_cliente].nome, clientes[id_cliente].idade, clientes[id_cliente].genero, clientes[id_cliente].plano,
            clientes[id_cliente].ativo);
+}
+
+void  ler_clientes_presenca(const char* nome_arquivo){
+    num_frequencias=0;
+    FILE *arquivo2 = fopen(nome_arquivo, "r");
+
+    if(arquivo2==NULL){
+        perror("Erro ao abrir o arquivo");
+        return;
+    }
+
+    char buffer[256];
+    while(fgets(buffer, sizeof (buffer), arquivo2)){
+
+
+        sscanf(buffer, "%d,%d,%d", &presenca[num_frequencias].id_cliente, &presenca[num_frequencias].num_sessoes,
+               &presenca[num_frequencias].id_plano_treino);
+        num_frequencias++;
+    }
+
+    fflush(arquivo2);
+
+    fclose(arquivo2);
+
+
+}
+
+void exibir_presencas(){
+
+    printf("Frequencias: \n");
+    for (int i=1; i<num_frequencias; i++){
+        printf("ID Cliente Frequencia: %d, Numero sessoes: %d, ID plano de treino: %d\n",
+               presenca[i].id_cliente, presenca[i].num_sessoes, presenca[i].id_plano_treino);
+    }
+    getchar();
 }
 
 

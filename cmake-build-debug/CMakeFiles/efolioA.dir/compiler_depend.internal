@@ -9,6 +9,7 @@ CMakeFiles/efolioA.dir/escrita_dados.c.obj
 CMakeFiles/efolioA.dir/leitura_dados.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.c
  C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h
+ C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h
 
 CMakeFiles/efolioA.dir/main.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/main.c
@@ -38,7 +39,7 @@ CMakeFiles/efolioA.dir/main.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/escrita_dados.h
  C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.h
  C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.h
- C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.h
+ C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h
 
 CMakeFiles/efolioA.dir/menu_principal.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.c
@@ -54,6 +55,10 @@ CMakeFiles/efolioA.dir/menu_principal.c.obj
  C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl
  C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h
  C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.h
+
+CMakeFiles/efolioA.dir/presenca.c.obj
+ C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.c
+ C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h
 
 CMakeFiles/efolioA.dir/relatorios.c.obj
  C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.c

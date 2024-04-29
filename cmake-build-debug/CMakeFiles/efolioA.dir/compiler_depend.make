@@ -6,7 +6,8 @@ CMakeFiles/efolioA.dir/escrita_dados.c.obj: C:/Users/tfrab/Downloads/LP21178/gym
   C:/Users/tfrab/Downloads/LP21178/gym-app/escrita_dados.h
 
 CMakeFiles/efolioA.dir/leitura_dados.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.c \
-  C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h
+  C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h \
+  C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h
 
 CMakeFiles/efolioA.dir/main.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/main.c \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
@@ -35,7 +36,7 @@ CMakeFiles/efolioA.dir/main.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/main
   C:/Users/tfrab/Downloads/LP21178/gym-app/escrita_dados.h \
   C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.h \
   C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.h \
-  C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.h
+  C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h
 
 CMakeFiles/efolioA.dir/menu_principal.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.c \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
@@ -50,6 +51,9 @@ CMakeFiles/efolioA.dir/menu_principal.c.obj: C:/Users/tfrab/Downloads/LP21178/gy
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.h
+
+CMakeFiles/efolioA.dir/presenca.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.c \
+  C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h
 
 CMakeFiles/efolioA.dir/relatorios.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.c \
   C:/Users/tfrab/Downloads/LP21178/gym-app/cliente.h \
@@ -70,15 +74,17 @@ C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.c:
 
-C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
-
-C:/Users/tfrab/Downloads/LP21178/gym-app/main.c:
-
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/string.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h:
+
+C:/Users/tfrab/Downloads/LP21178/gym-app/main.c:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
@@ -114,8 +120,10 @@ C:/Users/tfrab/Downloads/LP21178/gym-app/leitura_dados.h:
 
 C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.h:
 
-C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.h:
-
 C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.c:
 
+C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.c:
+
 C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.c:
+
+C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.h:

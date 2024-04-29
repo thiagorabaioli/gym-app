@@ -6,7 +6,6 @@
 #include "cliente.c"
 
 
-
 int main() {
 
     char *str_path="C:\\Users\\tfrab\\Downloads\\LP21178\\gym-app\\clientes.csv";
@@ -40,8 +39,8 @@ int main() {
                 ld_pesquisa_cliente_id();
                 break;
             case 6:
-               // ler_presensas_do_arquivo(str_frequencias);
-               // exibir_frequencias();
+                ld_ler_clientes_presenca();
+                ld_exibir_presencas();
                 break;
             case 7:
                //adicionar_frequencia_por_id(str_frequencias);

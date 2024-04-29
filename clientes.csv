@@ -1,10 +1,11 @@
-2,Maria,25,F,Cardio,1
-3,Pedro,35,M,Musculacao,1
+ID,Nome,Idade,Genero,Plano de Treino,Ativo
+1,Joao,30,M,Musculacao,1
+2,Maria,25,F,Musculacao,1
+3,Pedro,35,M,Fitness,1
 4,Ana,28,F,Musculacao,1
 5,Thiago,25,M,Cardio,1
 6,Catarina,25,M,Musculacao,1
 7,Tomas,25,M,Musculacao,1
-8,Rodrigo,25,M,Cardio,1
+8,Rodrigo,25,M,Perder_Peso,1
 9,Afonso,25,M,Fitness,1
-5,ThiagoRRR,34,M,MUSCCCC,1
-5,ThHHHHHH,3444,M,MUSCCC,1
+10,Mateus,25,M,Perder_Peso,1

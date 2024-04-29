@@ -25,5 +25,9 @@ void exibir_clientes();
 
 void pesquisa_cliente_id();
 
+void ler_clientes_presenca();
+
+void exibir_presencas();
+
 
 #endif

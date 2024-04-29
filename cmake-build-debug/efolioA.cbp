@@ -102,6 +102,12 @@
 		<Unit filename="C:/Users/tfrab/Downloads/LP21178/gym-app/menu_principal.h">
 			<Option target="efolioA"/>
 		</Unit>
+		<Unit filename="C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.c">
+			<Option target="efolioA"/>
+		</Unit>
+		<Unit filename="C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.h">
+			<Option target="efolioA"/>
+		</Unit>
 		<Unit filename="C:/Users/tfrab/Downloads/LP21178/gym-app/relatorios.c">
 			<Option target="efolioA"/>
 		</Unit>

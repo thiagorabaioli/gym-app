@@ -188,13 +188,13 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "presenca.h",
+			"path" : "controle_presenca.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "presenca.c",
+			"path" : "controle_presenca.c",
 			"sourceGroupIndex" : 1
 		}
 	],

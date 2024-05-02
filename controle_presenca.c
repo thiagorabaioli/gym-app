@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "presenca.h"
+#include "controle_presenca.h"
 #include "leitura_dados.h"
 #define MAX_SIZE2 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_frequencias2=0;

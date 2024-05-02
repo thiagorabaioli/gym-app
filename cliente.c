@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "cliente.h"
 #include <unistd.h>
-#include "presenca.h"
+#include "controle_presenca.h"
 
 #define MAX_SIZE 100 // Define o número máximo de clientes que o programa pode armazenar
 int num_clientes = 0; // Variável para rastrear o número atual de clientes

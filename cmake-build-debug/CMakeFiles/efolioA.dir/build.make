@@ -143,20 +143,20 @@ CMakeFiles/efolioA.dir/relatorios.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/efolioA.dir/relatorios.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tfrab\Downloads\LP21178\gym-app\relatorios.c -o CMakeFiles\efolioA.dir\relatorios.c.s
 
-CMakeFiles/efolioA.dir/presenca.c.obj: CMakeFiles/efolioA.dir/flags.make
-CMakeFiles/efolioA.dir/presenca.c.obj: CMakeFiles/efolioA.dir/includes_C.rsp
-CMakeFiles/efolioA.dir/presenca.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/presenca.c
-CMakeFiles/efolioA.dir/presenca.c.obj: CMakeFiles/efolioA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\tfrab\Downloads\LP21178\gym-app\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/efolioA.dir/presenca.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/efolioA.dir/presenca.c.obj -MF CMakeFiles\efolioA.dir\presenca.c.obj.d -o CMakeFiles\efolioA.dir\presenca.c.obj -c C:\Users\tfrab\Downloads\LP21178\gym-app\presenca.c
+CMakeFiles/efolioA.dir/controle_presenca.c.obj: CMakeFiles/efolioA.dir/flags.make
+CMakeFiles/efolioA.dir/controle_presenca.c.obj: CMakeFiles/efolioA.dir/includes_C.rsp
+CMakeFiles/efolioA.dir/controle_presenca.c.obj: C:/Users/tfrab/Downloads/LP21178/gym-app/controle_presenca.c
+CMakeFiles/efolioA.dir/controle_presenca.c.obj: CMakeFiles/efolioA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\tfrab\Downloads\LP21178\gym-app\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/efolioA.dir/controle_presenca.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/efolioA.dir/controle_presenca.c.obj -MF CMakeFiles\efolioA.dir\controle_presenca.c.obj.d -o CMakeFiles\efolioA.dir\controle_presenca.c.obj -c C:\Users\tfrab\Downloads\LP21178\gym-app\controle_presenca.c
 
-CMakeFiles/efolioA.dir/presenca.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/efolioA.dir/presenca.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tfrab\Downloads\LP21178\gym-app\presenca.c > CMakeFiles\efolioA.dir\presenca.c.i
+CMakeFiles/efolioA.dir/controle_presenca.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/efolioA.dir/controle_presenca.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tfrab\Downloads\LP21178\gym-app\controle_presenca.c > CMakeFiles\efolioA.dir\controle_presenca.c.i
 
-CMakeFiles/efolioA.dir/presenca.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/efolioA.dir/presenca.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tfrab\Downloads\LP21178\gym-app\presenca.c -o CMakeFiles\efolioA.dir\presenca.c.s
+CMakeFiles/efolioA.dir/controle_presenca.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/efolioA.dir/controle_presenca.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tfrab\Downloads\LP21178\gym-app\controle_presenca.c -o CMakeFiles\efolioA.dir\controle_presenca.c.s
 
 # Object files for target efolioA
 efolioA_OBJECTS = \
@@ -165,7 +165,7 @@ efolioA_OBJECTS = \
 "CMakeFiles/efolioA.dir/main.c.obj" \
 "CMakeFiles/efolioA.dir/menu_principal.c.obj" \
 "CMakeFiles/efolioA.dir/relatorios.c.obj" \
-"CMakeFiles/efolioA.dir/presenca.c.obj"
+"CMakeFiles/efolioA.dir/controle_presenca.c.obj"
 
 # External object files for target efolioA
 efolioA_EXTERNAL_OBJECTS =
@@ -175,7 +175,7 @@ efolioA.exe: CMakeFiles/efolioA.dir/leitura_dados.c.obj
 efolioA.exe: CMakeFiles/efolioA.dir/main.c.obj
 efolioA.exe: CMakeFiles/efolioA.dir/menu_principal.c.obj
 efolioA.exe: CMakeFiles/efolioA.dir/relatorios.c.obj
-efolioA.exe: CMakeFiles/efolioA.dir/presenca.c.obj
+efolioA.exe: CMakeFiles/efolioA.dir/controle_presenca.c.obj
 efolioA.exe: CMakeFiles/efolioA.dir/build.make
 efolioA.exe: CMakeFiles/efolioA.dir/linkLibs.rsp
 efolioA.exe: CMakeFiles/efolioA.dir/objects1.rsp

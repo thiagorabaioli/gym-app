@@ -128,6 +128,30 @@ efolioA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/build
 .PHONY : efolioA/fast
 
+controle_presenca.obj: controle_presenca.c.obj
+.PHONY : controle_presenca.obj
+
+# target to build an object file
+controle_presenca.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/controle_presenca.c.obj
+.PHONY : controle_presenca.c.obj
+
+controle_presenca.i: controle_presenca.c.i
+.PHONY : controle_presenca.i
+
+# target to preprocess a source file
+controle_presenca.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/controle_presenca.c.i
+.PHONY : controle_presenca.c.i
+
+controle_presenca.s: controle_presenca.c.s
+.PHONY : controle_presenca.s
+
+# target to generate assembly for a file
+controle_presenca.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/controle_presenca.c.s
+.PHONY : controle_presenca.c.s
+
 escrita_dados.obj: escrita_dados.c.obj
 .PHONY : escrita_dados.obj
 
@@ -224,30 +248,6 @@ menu_principal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/menu_principal.c.s
 .PHONY : menu_principal.c.s
 
-presenca.obj: presenca.c.obj
-.PHONY : presenca.obj
-
-# target to build an object file
-presenca.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/presenca.c.obj
-.PHONY : presenca.c.obj
-
-presenca.i: presenca.c.i
-.PHONY : presenca.i
-
-# target to preprocess a source file
-presenca.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/presenca.c.i
-.PHONY : presenca.c.i
-
-presenca.s: presenca.c.s
-.PHONY : presenca.s
-
-# target to generate assembly for a file
-presenca.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\efolioA.dir\build.make CMakeFiles/efolioA.dir/presenca.c.s
-.PHONY : presenca.c.s
-
 relatorios.obj: relatorios.c.obj
 .PHONY : relatorios.obj
 
@@ -281,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... efolioA
+	@echo ... controle_presenca.obj
+	@echo ... controle_presenca.i
+	@echo ... controle_presenca.s
 	@echo ... escrita_dados.obj
 	@echo ... escrita_dados.i
 	@echo ... escrita_dados.s
@@ -293,9 +296,6 @@ help:
 	@echo ... menu_principal.obj
 	@echo ... menu_principal.i
 	@echo ... menu_principal.s
-	@echo ... presenca.obj
-	@echo ... presenca.i
-	@echo ... presenca.s
 	@echo ... relatorios.obj
 	@echo ... relatorios.i
 	@echo ... relatorios.s

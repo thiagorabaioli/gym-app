@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include "cliente.h"
-#include "presenca.h"
+#include "controle_presenca.h"
 
 char *str_path_leitura="C:\\Users\\tfrab\\Downloads\\LP21178\\gym-app\\clientes.csv";
 

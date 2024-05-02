@@ -1,5 +1,5 @@
-#ifndef EFOLIOA_PRESENCA_H
-#define EFOLIOA_PRESENCA_H
+#ifndef EFOLIOA_CONTROLE_PRESENCA_H
+#define EFOLIOA_CONTROLE_PRESENCA_H
 
 typedef struct {
     int id_cliente;

@@ -16,5 +16,5 @@ add_executable(efolioA
         menu_principal.h
         relatorios.c
         relatorios.h
-        presenca.h
-        presenca.c)
+        controle_presenca.h
+        controle_presenca.c)

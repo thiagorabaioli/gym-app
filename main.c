@@ -4,7 +4,7 @@
 #include "escrita_dados.h"
 #include "menu_principal.h"
 #include "cliente.c"
-#include "presenca.h"
+#include "controle_presenca.h"
 
 
 int main() {

@@ -69,7 +69,6 @@ void p_inserir_frequencia_id(const char* nome_arquivo) {
             perror("Erro ao abrir o arquivo\n");
         }
         printf("numero de sessoes: %d \n",presenca[id_cliente].num_sessoes );
-        printf("pagamento tem o numero: %d \n", presenca[id_cliente].pagamento);
             int pagamento2 = presenca[id_cliente].num_sessoes * presenca[id_cliente].pagamento;
          printf("Valor do pagamento dentro da classe presenca %d: ", pagamento2);
            return pagamento2;

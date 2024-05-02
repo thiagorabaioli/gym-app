@@ -17,6 +17,8 @@ int main() {
 
         exibir_menu_principal();
         opcao = obter_opcao_principal();
+        ler_clientes_do_arquivo(str_path); //Carrega os dados na memória de clientes.csv
+        ld_ler_clientes_presenca(); //Carrega os dados na meméria de frequencias.csv
 
         switch (opcao) {
             case 1:
@@ -24,11 +26,9 @@ int main() {
 
                 break;
             case 2:
-                ld_ler_clientes_do_arquivo();
                 ld_exibir_clientes();
                 break;
             case 3:
-                ld_ler_clientes_do_arquivo();
                 ed_remover_clientes();
                 ed_escrever_clientes_no_arquivo();
                 break;
@@ -36,11 +36,9 @@ int main() {
 
                 break;
             case 5:
-                ld_ler_clientes_do_arquivo();
                 ld_pesquisa_cliente_id();
                 break;
             case 6:
-                ld_ler_clientes_presenca();
                 ld_exibir_presencas();
                 break;
             case 7:
@@ -48,6 +46,7 @@ int main() {
                 break;
             case 8:
                 printf("Calcular pagamento \n");
+
                 ed_pagamento_id();
                 break;
             case 9:
